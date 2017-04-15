@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Leaflet Emoji Layer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+  <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+  <link rel="stylesheet" href="index.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,800" rel="stylesheet">
+  <script src="//localhost:9091"></script>
+</head>
+
+
+<body>
+  <header>
+    <h1>
+      Em<span class="earth js-earth">🌎</span>ji<br>maps
+    </h1>
+    <p>
+      An experiment by <a href="https://twitter.com/nerik">@nerik</a> |
+      <a href="https://github.com/nerik/Leaflet.Emoji/">source code</a>
+    </p>
+    <div class="mapSelector">
+      <div class="mapSelectorTitle"><span class="js-mapSelectorTitle"></span></div>
+      <div class="js-mapSelector mapSelectorItems"></div>
+    </div>
+    <div class="info">
+      <div class="js-description description"></div>
+      <div class="js-legend legend"></div>
+      <div class="js-source source"></div>
+    </div>
+  </header>
+  <div id="map">
+    <div class="controls">
+      <button class="copyBtn js-copyBtn">
+        Copy to clipboard!
+      </button>
+    </div>
+  </div>
+<!--
+  <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,fetch"></script>
+  <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+
+  <script type="text/javascript" src="dist/Leaflet.Emoji.min.js"></script> -->
+  <script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>

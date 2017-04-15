@@ -1,0 +1,139 @@
+html, body, #map {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#map {
+  width: calc(100% - 400px);
+}
+
+header {
+  position: absolute;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: rgb(31, 30, 28);
+  color: rgb(232, 232, 232);
+  overflow-y: scroll;
+}
+
+header > *, .mapSelector > * {
+  margin: 0 40px;
+}
+
+header a,
+.mapSelectorTitle > span,
+.mapSelectorItem > span {
+  color: rgb(113, 203, 236);
+  border-bottom: 1px solid rgba(113, 203, 236, .3);
+  text-decoration: none;
+}
+
+
+header a:hover,
+.mapSelectorTitle:hover > span,
+.mapSelectorItem:hover > span {
+  color: rgb(120, 219, 255);
+  border-bottom: 2px solid rgb(120, 219, 255);
+}
+
+.mapSelectorItem > span {
+  pointer-events: none;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  line-height: .65em;
+}
+
+.earth {
+  font-size: .6em;
+}
+
+.mapSelector {
+  margin: 20px 0;
+  border-bottom: 1px solid rgba(232, 232, 232, .5);
+  border-top: 1px solid rgba(232, 232, 232, .5);
+}
+
+.mapSelectorTitle {
+  font-size: 1.3em;
+}
+
+.mapSelectorTitle, .mapSelectorItem {
+  padding: 20px 0;
+  margin-top: 1px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mapSelectorItems {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .2s;
+  -moz-transition: max-height .2s;
+  transition: max-height .2s;
+}
+
+.mapSelectorItem {
+  border-top: 1px solid rgba(232, 232, 232, .2);
+}
+
+.mapSelectorItems.-expanded {
+  max-height: 600px;
+}
+
+.info {
+  line-height: 1.7em;
+  margin-bottom: 40px;;
+}
+
+.source {
+  margin-top: 30px;
+}
+
+.info > div:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+.copyBtn {
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 1.3em;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+  border: 1px solid #ccc;
+}
+
+.biv-c {
+  padding-top: 50px;
+  position: relative;
+}
+
+.biv {
+  transform: translateX(10px) rotateZ(-45deg);
+  position: absolute;
+  transform-origin: bottom left;
+  text-align: right;
+  top: 24px;
+}
+
+.leaflet-container { background-color:rgba(255, 251, 219, 1); }
+
+.leaflet-emoji {
+  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
